@@ -28,7 +28,15 @@ def finalizar_app():
     exibir_subtitulo("Finalizar app")
 
 def voltar_ao_menu_principal():
-    """Essa função é responsável por voltar a tela principal após teclar qualquer caractere + Enter"""
+    """Essa função é responsável por voltar a tela principal após teclar qualquer caractere + Enter
+    
+    Inputs:
+    - Qualquer tecla para sair
+    
+    Outputs:
+    - Executa a função main() para voltar a tela principal
+
+    """
     input("\nDigite uma tecla para voltar ao menu principal: ")
     main()
 
@@ -47,7 +55,14 @@ def exibir_subtitulo(texto):
     print()
 
 def cadastrar_novo_restaurante():
-    """Essa função é responsável por cadastrar um novo restaurante"""
+    """Essa função é responsável por cadastrar um novo restaurante
+    Inputs:
+    - Nome do restaurante
+    - Categoria
+
+    Outputs:
+    - Adicona um novo restaurante na lista de restaurantes
+    """
     exibir_subtitulo("Cadastro de novos restaurantes")
     nome_do_restaurante = input("Digite o nome do restaurante que deseja cadastrar: ")
     categoria = input(f"Digite o nome da categoria do restaurante {nome_do_restaurante}: ")
@@ -70,7 +85,15 @@ def listar_restaurantes():
     voltar_ao_menu_principal()
 
 def altenar_estado_restaurante():
-    """Essa função é responsável por alterar o estado/status do restaurante (ativado/desativado)"""
+    """Essa função é responsável por alterar o estado/status do restaurante (ativado/desativado)
+    
+    Inputs:
+    - Necessário digitar o nome do restaurante cadastrar para alternar o status
+
+    Outputs:
+    - O usuário é sinalizado que o restaurante foi ativado ou desativado
+    
+    """
     exibir_subtitulo('Alterando estado do restaurante')
     nome_restaurante = input("Digite o nome do restaurante que deseja alterar o estado: ")
     restaurante_encontrado = False
